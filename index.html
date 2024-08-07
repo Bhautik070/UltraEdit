@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo {
+            background-color: blue;
+        }
+
+        .logo img {
+            width: 164px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .right ul {
+            display: flex;
+            gap: 34px;
+        }
+
+        .right ul li {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+
+        }
+
+        .right ul li span {
+            padding: 0 5px;
+
+        }
+
+        .right ul li:hover {
+            background-color: rgb(0, 255, 242);
+            color: black;
+        }
+
+        .first{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; 
+            gap: 23px;
+            margin: 70px;  
+            font-family: sans-serif; 
+                   
+        }
+        .first span{
+            font-size: 40px;
+        }
+        .first p{
+            font-size: 23px;
+            width: 44vw;
+            text-align: center;
+
+
+        }
+        .section span img{
+            width: 82px;
+            margin: 0 23px;
+        }
+
+        .btn{
+            background: #00b6d1;
+            padding: 14px 16px;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .flex{
+            display: flex;
+
+        }
+        .small{
+            font-size: 14px;
+        }
+        .second{
+            max-width: 50vw;
+            margin: auto;
+            
+
+        }
+        .green{
+            background-color: #5cb85c;
+        }
+
+        .item{
+            padding: 23px;
+            background-color: #eee1e1;
+            font-size: 20px;
+            border-radius: 12px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+
+
+        }
+        .item-leng{
+            font-weight: 700;
+            padding-bottom: 36px;
+            text-align: center;
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+        }
+
+        .download:nth-child(2){
+            font-size: 23px;
+        }
+
+        .dowmlod img{
+            padding: 0px 12px;
+
+        }
+
+        .download{
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        @media screen and (max-width:945px){
+            .grid{
+                grid-template-columns: 1fr;
+            }
+            
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="UE-Logo-1.webp" alt="">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Pricing</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>Resources</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li><span>About Us</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20"
+                            height="20" color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>
+                        <img src="UE_Lang.png" alt="">
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+
+        <main>
+            <section class="first">
+                
+                <span>Download <strong>UltraEdit</strong> for Windows
+                    <img src="Reviews.png" alt=""></span>
+                <p>Download and try UltraEdit before you buy it! This download includes the full Windows version of the text editor.</p>  
+                <div>
+                    <button class="btn">
+                        DOWNLOAD MAC OR LINUX VERSION</button>
+                </div> 
+            </section>
+
+            <section class="second">
+                <div class="download">
+                    <img src="UE_logo_icon_white.png" width="40px">
+                    <span>Download UltraEdit</span>
+                    <span class="small">v2024.0(released 04/19/2024) | Hotfix</span>
+                </div>
+
+                <div class="grid">
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+
+                    <div class="item">
+                        <div class="item-leng">English</div>
+                        <button class="btn blue">Downlod 32-bit</button>
+                        <button class="btn green">Downlod 64-bit</button>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </header>
+</body>
+
+</html>
